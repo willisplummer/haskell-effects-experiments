@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+set -e
+
+rm src/*.hi || true
+rm src/*.o || true
+rm app/*.hi || true
+rm app/*.o || true
+ghc \
+    -O app/Main.hs src/Lib.hs \
+    -Wall \
+    -threaded \
+    -rtsopts \
+    -with-rtsopts=-N \
+    -o bin/Main
+./bin/Main
