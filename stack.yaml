@@ -1,0 +1,11 @@
+flags: {}
+packages:
+- .
+extra-deps:
+  - higgledy-0.3.1.0@sha256:fa3e3cb4e92e76b0fa6ce7212e12f8e479ceb1b276a6e8edf152b8c5b6834888
+  # - unliftio-0.2.12@sha256:b089fbc2ff2628a963c2c4b12143f2020874e3e5144ffd6c62b25639a0ca1483
+  - git: git@github.com:benweitzman/yael
+    commit: 066f9d0adc9b5d0ae8fc3f1122b2f1c201f80e72
+    subdirs:
+      - yael
+resolver: lts-14.6
